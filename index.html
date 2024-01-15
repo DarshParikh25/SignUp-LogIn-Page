@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Login Authentication Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container sign-up">
+            <h1>Sign Up</h1>
+            <div class="icons">
+                <a href="#"><img src="assests/images/icons/google-plus.png" alt=""></a>
+                <a href="#"><img src="assests/images/icons/facebook.png" alt=""></a>
+                <a href="#"><img src="assests/images/icons/linkedin.png" alt=""></a>
+                <a href="#"><img src="assests/images/icons/github.png" alt=""></a>
+            </div>
+            <hr>
+            <form>
+                <span>Sign Up with Email</span>
+                <label for="signUpName">
+                    <input type="text" name="signUpName" id="signUpName" placeholder="Name">
+                </label>
+                <label for="signUpEmail">
+                    <input type="email" name="signUpEmail" id="signUpEmail" placeholder="Email">
+                </label>
+                <label for="signUpPassword">
+                    <input type="password" name="signUpPassword" id="signUpPassword" placeholder="Password">
+                </label>
+                
+                <button id="sign-up-button" onclick="submitSignUpForm(event)">Sign Up</button>
+                <p onclick="toggleForm()">Already have an Account? Click here to Log In!</p>
+            </form>
+        </div>
+        <div class="form-container log-in">
+            <h1>Log In</h1>
+            <div class="icons">
+                <a href="#"><img src="assests/images/icons/google-plus.png" alt=""></a>
+                <a href="#"><img src="assests/images/icons/facebook.png" alt=""></a>
+                <a href="#"><img src="assests/images/icons/linkedin.png" alt=""></a>
+                <a href="#"><img src="assests/images/icons/github.png" alt=""></a>
+            </div>
+            <hr>
+            <form>
+                <span>Log In with Email</span>
+                <label for="signInEmail">
+                    <input type="email" name="signInEmail" id="signInEmail" placeholder="Email">
+                </label>
+                <label for="signInPassword">
+                    <input type="password" name="signInPassword" id="signInPassword" placeholder="Password">
+                </label>
+                <button id="log-in-button" onclick="submitSignInForm(event)">Log In</button>
+                <a href="#">Forgot Password!</a>
+                <p onclick="toggleForm()">Don't have an account? Click here to Sign Up!</p>
+            </form>
+        </div>
+    </div>
+
+    <div id="box"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
